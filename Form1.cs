@@ -17,10 +17,11 @@ namespace CatchButton
 
             
             Random rd = new Random();
-            
-            int maxX = this.ClientSize.Width;
-            int maxY = this.ClientSize.Height;
-            
+
+            int maxX = this.ClientSize.Width - btnTarget.Width;
+            int maxY = this.ClientSize.Height - btnTarget.Height;
+
+
             int nextX = rd.Next(0, maxX);
             int nextY = rd.Next(0, maxY);
             
