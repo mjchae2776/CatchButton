@@ -28,12 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            btnTarget = new Button();
+            colorDialog1 = new ColorDialog();
+            SuspendLayout();
+            // 
+            // btnTarget
+            // 
+            btnTarget.BackColor = SystemColors.ActiveCaption;
+            btnTarget.Font = new Font("함초롬돋움 확장", 48F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnTarget.Location = new Point(96, 124);
+            btnTarget.Name = "btnTarget";
+            btnTarget.Size = new Size(400, 150);
+            btnTarget.TabIndex = 0;
+            btnTarget.Text = "나를 잡아봐";
+            btnTarget.UseVisualStyleBackColor = false;
+            btnTarget.Click += button1_Click;
+            btnTarget.MouseEnter += btnTarget_MouseEnter;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnTarget);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnTarget;
+        private ColorDialog colorDialog1;
     }
 }
