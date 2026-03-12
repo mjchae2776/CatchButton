@@ -18,3 +18,9 @@
 
 <img width="805" height="486" alt="image" src="https://github.com/user-attachments/assets/193f65b6-a84f-40b3-9b16-d05020912b33" />
 
+
+-2단계(시각적/청각적피드백) 코드의 실행 스크린샷
+
+버튼을 잡았을 때 - “축하합니다” 라는 메세지박스가 뜸
+<img width="808" height="485" alt="image" src="https://github.com/user-attachments/assets/67e9c876-44e3-499b-8bb5-5ee441d6af9c" />
+
