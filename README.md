@@ -6,7 +6,8 @@
 -화면구성:
 
 ##실행 화면
--1단계 코드의 실행 스크린샷
+
+-1단계(기본 도망 기능 구현) 코드의 실행 스크린샷
 
 (실행시)
 <img width="817" height="497" alt="image" src="https://github.com/user-attachments/assets/d5fbcb51-0e5e-407a-9de1-6eddb555b346" />
