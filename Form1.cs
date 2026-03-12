@@ -1,10 +1,14 @@
+using System.Text.RegularExpressions;
+
 namespace CatchButton
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Catch the button version 1.2";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -14,7 +18,6 @@ namespace CatchButton
 
         private void btnTarget_MouseEnter(object sender, EventArgs e)
         {
-
             
             Random rd = new Random();
 
