@@ -16,16 +16,26 @@ namespace CatchButton
         {
             score += 100;
 
+           
             btnTarget.Width = (int)(btnTarget.Width * 0.9);
             btnTarget.Height = (int)(btnTarget.Height * 0.9);
 
             
+            float newSize = btnTarget.Font.Size * 0.9f;
+
+           
+            if (newSize > 5f)
+            {
+                btnTarget.Font = new Font(btnTarget.Font.FontFamily, newSize);
+            }
+
             this.Text = $"Catch the button v1.2 | 점수: {score}";
 
             SystemSounds.Asterisk.Play();
             MessageBox.Show("축하합니다~!");
+            this.ActiveControl = null;
 
-            
+
         }
 
         private void btnTarget_MouseEnter(object sender, EventArgs e)

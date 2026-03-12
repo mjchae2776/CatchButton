@@ -40,6 +40,7 @@
             btnTarget.Name = "btnTarget";
             btnTarget.Size = new Size(400, 150);
             btnTarget.TabIndex = 0;
+            btnTarget.TabStop = false;
             btnTarget.Text = "나를 잡아봐";
             btnTarget.UseVisualStyleBackColor = false;
             btnTarget.Click += button1_Click;
