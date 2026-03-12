@@ -5,7 +5,7 @@ namespace CatchButton
 {
     public partial class Form1 : Form
     {
-
+        private int score = 0;
         public Form1()
         {
             InitializeComponent();
@@ -14,22 +14,26 @@ namespace CatchButton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            SystemSounds.Asterisk.Play();
+            score += 100;
+
+            btnTarget.Width = (int)(btnTarget.Width * 0.9);
+            btnTarget.Height = (int)(btnTarget.Height * 0.9);
 
             
-            SystemSounds.Asterisk.Play();
+            this.Text = $"Catch the button v1.2 | 점수: {score}";
 
-            
+            SystemSounds.Asterisk.Play();
             MessageBox.Show("축하합니다~!");
 
             
-            this.Text = "Catch the button version 1.2";
         }
 
         private void btnTarget_MouseEnter(object sender, EventArgs e)
         {
             
+
+            SystemSounds.Beep.Play();
+
             Random rd = new Random();
 
             int maxX = this.ClientSize.Width - btnTarget.Width;
@@ -45,6 +49,15 @@ namespace CatchButton
 
             //도망갈 때 '띵' 하는 가벼운 경고음
             SystemSounds.Beep.Play();
+
+            score -= 10;
+
+            
+
+            btnTarget.Location = new Point(nextX, nextY);
+
+
+            this.Text = $"점수: {score} | 버튼위치: ({nextX}, {nextY})";
         }
     }
 }
